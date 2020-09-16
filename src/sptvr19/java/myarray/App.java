@@ -8,6 +8,16 @@ class App {
         int lenght = 20;
         int i;
         
+        System.out.println("   --- MyArray ---");
+        System.out.println("--- by Georg Laabe ---");
+        
+        System.out.println("\nExercise: ");
+        System.out.println("\nCreate an array of 20 random even integers.");
+        System.out.println("Calculate the average of the array elements");
+        System.out.println("without regard to the minimum and maximum elements of the array.");
+                
+        System.out.println("\nSolution:");
+                     
         System.out.printf("\n ---------------- Random Array --------------");
         
         for (i = 11; i < lenght; i++) {
@@ -26,7 +36,7 @@ class App {
         
         
         for (i = 0; i < lenght; i++) {
-            number = rand.nextInt(10);
+            number = rand.nextInt(50);
             array[i] = number * 2;
             sum += number;
             System.out.printf("%4d", array[i]);
@@ -46,6 +56,6 @@ class App {
         array[lenght - 1] = 0;
         
         System.out.println("\nAverage is: " + sum / (lenght - 2));
-        Thread.sleep(4000);
+        Thread.sleep(6000);
     }
 }
